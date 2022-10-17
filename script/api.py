@@ -32,7 +32,7 @@ def create_X_prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartD
 @app.get("/prediction/")
 async def prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, Fruits,Veggies, HvyAlcoholConsump, AnyHealthcare, NoDocbcCost,GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education, Income):
 
-    with open('../modele/modeleDecisionTree.pkl', 'rb') as file:
+    with open('modele/modeleDecisionTree.pkl', 'rb') as file:
 
     #Call load method to deserialze
       m = pickle.load(file)
