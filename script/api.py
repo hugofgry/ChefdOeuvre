@@ -44,7 +44,7 @@ async def prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDise
 # @app.get("/predictionClust/")
 # async def prediction(date):
 
-#     with open('../modele/modeleRF.pkl', 'rb') as file:
+#     with open('modele/modeleRF.pkl', 'rb') as file:
 
 #     #Call load method to deserialze
 #       m = pickle.load(file)
