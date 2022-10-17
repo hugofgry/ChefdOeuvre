@@ -37,7 +37,7 @@ async def prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDise
     #Call load method to deserialze
       m = pickle.load(file)
 
-      return m.predict(create_X_prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, Fruits,Veggies, HvyAlcoholConsump, AnyHealthcare, NoDocbcCost,GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education, Income))[0]
+      return str(m.predict(create_X_prediction(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, Fruits,Veggies, HvyAlcoholConsump, AnyHealthcare, NoDocbcCost,GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education, Income))[0])
 
 
 
