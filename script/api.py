@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Path, HTTPException
 import numpy as np
-import modeleTD
 import pandas as pd
 import pickle
 
